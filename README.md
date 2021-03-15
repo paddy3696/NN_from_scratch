@@ -2,7 +2,7 @@
 # Fundamentals of DL course Assignment - 1 
 
 
-### Install
+## Install
 
 This project requires **Python** and the following Python libraries installed:
 
@@ -13,17 +13,16 @@ This project requires **Python** and the following Python libraries installed:
 - [wandb](https://wandb.ai/site)
 
 
-### Code
+## Code
 - #### Neural network Class (MyNN)
-
-
+The neural network class contains all the functions required for training the model. The function fit is the training 
 
 - #### One hot encoder
 - #### Wandb configuration
 - #### train sweep function
 - #### Testing
 
-### Run
+## Run
 
 In a terminal or command window, navigate to the top-level project directory `NN_from_scratch/` (that contains this README) and run one of the following commands:
 
@@ -34,12 +33,12 @@ or
 ```bash
 jupyter notebook MNIST_Classification.ipynb
 ```
-### Data
+## Data
 The MNIST fashion dataset is downloaded directly from the Keras library using the following the command:
 ```python
 from keras.datasets import fashion_mnist
 ```
-#### Data Preprocessing
+### Data Preprocessing
 - The MNIST fashion dataset contains 80k image data. The data is split in the ratio of 90:10 for training and testing respectively.
 - The training data is very split with ratio of 90:10 for training and validation. This is done to avoid Overfitting.
 - All the test, train and validation data are normalized for better performance of the neural network
