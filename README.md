@@ -1,4 +1,4 @@
-# NN_from_scratch
+# Neural Network from_scratch
 # Fundamentals of DL course Assignment - 1 
 
 
@@ -35,4 +35,10 @@ jupyter notebook MNIST_Classification.ipynb
 
 
 ### Data
-
+The MNIST fashion dataset is downloaded directly from the Keras library using the following the command:
+```from keras.datasets import fashion_mnist
+```
+#### Preprocessing
+- The MNIST fashion dataset contains 80k image data. The data is split in the ratio of 90:10 for training and testing respectively.
+- The training data is very split with ratio of 90:10 for training and validation. This is done to avoid Overfitting.
+- All the test, train and validation data are normalized for better performance of the neural Network
