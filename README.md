@@ -76,7 +76,7 @@ It is to be noted that these parameters can be changed and additional paramters 
 The function **train** is the main function called by the wandb sweep. This function contains the wandb initialization and data pre-processing.  
 
 - #### Testing
-The function **model_test** finds the accuracy of the model with test data and plots the Confusion matrix heatmap
+The function **model_test** finds the accuracy of the model with test data and plots the Confusion matrix heatmap.
 
 
 ## Run
