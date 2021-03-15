@@ -95,3 +95,16 @@ from keras.datasets import fashion_mnist
 - The MNIST fashion dataset contains 80k image data. The data is split in the ratio of 90:10 for training and testing respectively.
 - The training data is very split with ratio of 90:10 for training and validation. This is done to avoid Overfitting.
 - All the test, train and validation data are normalized for better performance of the neural network
+
+## Reference
+- https://ml-cheatsheet.readthedocs.io/en/latest/index.html
+- https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/
+- [Sentdex - Neural Network from scratch](https://youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
+- [CS7015- Deep Learning](https://youtube.com/playlist?list=PLyqSpQzTE6M9gCgajvQbc68Hk_JKGBAYT)
+- https://www.deeplearningbook.org/
+- https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+
+
+
+
+
