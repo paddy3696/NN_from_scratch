@@ -31,7 +31,7 @@ model.fit(X,Y,x_valid,y_valid)
 ```
 
 - #### Wandb configuration
-Wandb sweep requires to define a sweep configuaration with hyper-parameters in a dictionary type. The following code snippet is an example of defining the sweep configuration:
+Wandb is a tool that is used for tuning the hyper-parameter. The wandb sweep requires to define a sweep configuaration with hyper-parameters in a dictionary type. The following code snippet is an example of defining the wandb sweep configuration:
 ```python
 sweep_config = {
     'method': 'bayes', #grid, random
@@ -70,6 +70,7 @@ sweep_config = {
     }
 }
 ```
+It is to be noted that these parameters can be changed and additional paramters for tuning can also be added.
 
 - #### train sweep function
 - #### Testing
