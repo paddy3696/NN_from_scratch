@@ -31,7 +31,45 @@ model.fit(X,Y,x_valid,y_valid)
 ```
 
 - #### Wandb configuration
-Wandb sweep 
+Wandb sweep requires to define a sweep configuaration with hyper-parameters in a dictionary type. The following code snippet is an example of defining the sweep configuration:
+```python
+sweep_config = {
+    'method': 'bayes', #grid, random
+    'metric': {
+      'name': 'accuracy',
+      'goal': 'maximize'   
+    },
+    'parameters': {
+        'max_epoch': {
+            'values': [20, 30]
+        },
+        'wb_init': {
+            'values': ['he', 'xavier_uniform']
+        },
+        'batch_size': {
+            'values': [16, 32, 64]
+        },
+        'hidden_size': {
+            'values': [32, 64, 128]
+        },
+        'n_hidden': {
+            'values': [3,4,5]
+        },
+        'alpha': {
+            'values': [0, 0.0005, 0.5]
+        },
+        'learning_rate': {
+            'values': [1e-3, 1e-4]
+        },
+        'optimizer': {
+            'values': ['SGD','SGDM','RMSP','ADAM','NADAM'] 
+        },
+        'activation': {
+            'values': ['relu','sigmoid','tanh']
+        },
+    }
+}
+```
 
 - #### train sweep function
 - #### Testing
