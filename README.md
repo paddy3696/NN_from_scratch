@@ -2,7 +2,7 @@
 # Fundamentals of DL course Assignment - 1 
 
 
-#### Install
+### Install
 
 This project requires **Python** and the following Python libraries installed:
 
@@ -14,6 +14,12 @@ This project requires **Python** and the following Python libraries installed:
 
 
 ### Code
+#### - Initialization
+#### - One hot encoder
+#### - Neural network Class
+#### - Wandb configuration
+#### - train sweep function
+#### - Testing
 
 ### Run
 
