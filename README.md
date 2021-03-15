@@ -15,10 +15,24 @@ This project requires **Python** and the following Python libraries installed:
 
 ## Code
 - #### Neural network Class (MyNN)
-The neural network class contains all the functions required for training the model. The function fit is the training 
+The neural network class contains all the functions required for training the model. The function **fit** is the training function which contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters). The activation functions (Sigmoid, tanh, relu) and weights, bias initialization (xavier, normal) are independently defined. 
 
-- #### One hot encoder
+The one hot encoding is performed to deal with categorial output variable. and it is defined as a seperate function.
+
+The following line of code is an example to define a model using the MyNN class:
+```python
+model = MyNN(network_size=layers,network_fns=act,batch_size = 64,
+             optimizer='NADAM',regularize= 'l2',alpha = 0, wb_init = 'xavier_uniform',
+             learning_rate = 1e-3, max_epoch=5,verbose=1,seed=25)
+```
+After defining the model, the training of the model can be done using the following command:
+```python
+model.fit(X,Y,x_valid,y_valid)
+```
+
 - #### Wandb configuration
+Wandb sweep 
+
 - #### train sweep function
 - #### Testing
 
