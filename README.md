@@ -34,7 +34,7 @@ jupyter notebook MNIST_Classification.ipynb
 ```
 ### Data
 The MNIST fashion dataset is downloaded directly from the Keras library using the following the command:
-```bash
+```python
 from keras.datasets import fashion_mnist
 ```
 #### Data Preprocessing
