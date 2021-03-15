@@ -14,7 +14,7 @@ This project requires **Python** and the following Python libraries installed:
 
 
 ### Code
-#### - Initialization
+- #### Initialization
 #### - One hot encoder
 #### - Neural network Class
 #### - Wandb configuration
