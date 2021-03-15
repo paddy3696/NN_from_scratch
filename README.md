@@ -72,8 +72,12 @@ sweep_config = {
 ```
 It is to be noted that these parameters can be changed and additional paramters for tuning can also be added.
 
-- #### train sweep function
+- #### Train sweep function
+The function **train** is the main function called by the wandb sweep. This function contains the wandb initialization and data pre-processing.  
+
 - #### Testing
+The function **model_test** finds the accuracy of the model with test data and plots the Confusion matrix heatmap
+
 
 ## Run
 
@@ -86,6 +90,12 @@ or
 ```bash
 jupyter notebook MNIST_Classification.ipynb
 ```
+The code for MNIST handwriting data is seperately uploaded and it can be run using the following command:
+
+```bash
+jupyter notebook NN_MNIST_HW.ipynb
+``` 
+
 ## Data
 The MNIST fashion dataset is downloaded directly from the Keras library using the following the command:
 ```python
