@@ -14,9 +14,11 @@ This project requires **Python** and the following Python libraries installed:
 
 
 ### Code
-- #### Initialization
+- #### Neural network Class (MyNN)
+
+
+
 - #### One hot encoder
-- #### Neural network Class
 - #### Wandb configuration
 - #### train sweep function
 - #### Testing
