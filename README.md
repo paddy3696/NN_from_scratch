@@ -20,6 +20,7 @@ The neural network class contains all the functions required for training the mo
 The one hot encoding is performed to deal with categorial output variable. and it is defined as a seperate function.
 
 The following line of code is an example to define a model using the MyNN class:
+
 ```python
 model = MyNN(network_size=layers,network_fns=act,batch_size = 64,
              optimizer='NADAM',regularize= 'l2',alpha = 0, wb_init = 'xavier_uniform',
