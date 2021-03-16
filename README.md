@@ -90,7 +90,11 @@ or
 ```bash
 jupyter notebook MNIST_Classification.ipynb
 ```
-The code for MNIST handwriting data is seperately uploaded and it can be run using the following command:
+The code for evaluating the perfomance of the model with MNIST Fashion data is seperately uploaded and it can be run using the following command:
+```bash
+jupyter notebook MNIST_fasion_test.ipynb
+``` 
+The code for evaluating the perfomance of the model with MNIST handwriting data is seperately uploaded and it can be run using the following command:
 
 ```bash
 jupyter notebook NN_MNIST_HW.ipynb
