@@ -22,7 +22,7 @@ The one hot encoding is performed to deal with categorial output variable. and i
 The following line of code is an example to define a model using the MyNN class:
 
 ```python
-model = MyNN(network_size=layers,network_fns=act,batch_size = 64,
+model = MyNN(network_size=layers,network_fns=act,batch_size = 64, loss_fn = 'crossE'
              optimizer='NADAM',regularize= 'l2',alpha = 0, wb_init = 'xavier_uniform',
              learning_rate = 1e-3, max_epoch=5,verbose=1,seed=25)
 ```
@@ -30,7 +30,6 @@ After defining the model, the training of the model can be done using the follow
 ```python
 model.fit(X,Y,x_valid,y_valid)
 ```
-
 - #### Wandb configuration
 Wandb is a tool for tuning the hyper-parameters of a model. The wandb sweep requires to define a sweep configuaration with hyper-parameters in a dictionary type. The following code snippet is an example of defining the wandb sweep configuration:
 ```python
